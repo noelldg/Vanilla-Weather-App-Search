@@ -15,21 +15,32 @@
   <body>
     <div class="weather-box">
       <header>
-        <form action="">
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-submit" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Herriman</h1>
-          <p>
-            Saturday 21:03, clear
-            <br />
-            Humidity: 44%, Wind: 5mph
-          </p>
+        <div class="weather-box-main">
+          <div>
+            <h1 class="main-city">Herriman</h1>
+            <p class="main-city-details">
+              Saturday 21:03, clear
+              <br />
+              Humidity: <strong>44%</strong>, Wind: <strong>5mph</strong>
+            </p>
+          </div>
+          <div class="main-city-container">
+            <div class="main-city-icon">🌙</div>
+            <div class="main-city-temp">40</div>
+            <div class="main-city-unit">°C</div>
+          </div>
         </div>
-        <div>🌙 40°C</div>
       </main>
       <footer>
         This project was coded by
