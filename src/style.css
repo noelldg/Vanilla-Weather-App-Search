@@ -83,6 +83,24 @@ main {
   font-size: 28px;
 }
 
+.weather-forecast {
+  margin-top: 20px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: #202124;
+  opacity: 0.6;
+}
+
+.weather-forecast-temp {
+  font-size: 13px;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.6;
+}
+
 footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
