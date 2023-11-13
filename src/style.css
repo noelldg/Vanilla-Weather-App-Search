@@ -69,18 +69,17 @@ main {
 }
 
 .main-city-icon {
-  font-size: 44px;
-  margin-top: 32px;
+  width: 88px;
+  height: 88px;
 }
 
 .main-city-temp {
   font-size: 88px;
   font-weight: 500;
-  margin-left: 10px;
+  line-height: 88px;
 }
 
 .main-city-unit {
-  margin-top: 22px;
   font-size: 28px;
 }
 
