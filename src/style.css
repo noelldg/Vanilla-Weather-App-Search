@@ -25,13 +25,22 @@ header {
   background-color: #f9f7fe;
   border: none;
   border-radius: 6px;
-  width: 80%;
+  width: 58%;
   padding: 15px 20px;
   font-size: 16px;
 }
 
 .search-form-submit {
   background: #f70776;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  margin-left: 5px;
+  font-size: 16px;
+}
+.current-submit {
+  background: #35bcbf;
   padding: 15px 30px;
   border: none;
   border-radius: 6px;

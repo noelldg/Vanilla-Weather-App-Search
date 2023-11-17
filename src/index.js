@@ -101,9 +101,26 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "b0tab7d2df4abf5923fo8297f1d5a565";
+  let apiURL = `https://api.shecodes.io/weather/v1/current?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=imperial`;
+
+  https: axios.get(apiURL).then(refreshWeatherData);
+}
+
+function getCurrent(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let currentElement = document.querySelector("#current-submit");
+currentElement.addEventListener("click", getCurrent);
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement = addEventListener("submit", handleSearchSubmit);
 
-searchCity("Herriman");
-getForecast("Herriman");
+searchCity("Manila");
+getForecast("Manila");
 //displayForecast();
